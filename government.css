@@ -5,6 +5,7 @@
 body {
     padding-top: 100px;
     /*height of the header must match*/
+	background-color: #2196F3;
 }
 .nav-bar-ul a {
     text-decoration: none;
