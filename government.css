@@ -12,19 +12,20 @@ body {
 }
 /*Header*/
 
-.government-header {
+.page-header {
     background-color: #E53935;
     height: 100px;
     /*text*/
-	 background-image: linear-gradient( rgba(33, 150, 243, .4), rgba(33, 150, 243, .8)), url('images/gov.jpg');
-
+	 background-image: linear-gradient( rgba(33, 150, 243, .4), rgba(33, 150, 243, .8)), url('images/gov-header.jpg');
+	
+	height: 100px;
     
    
     color: #ffffff;
     font-family: 'Fira Sans', sans-serif;
     font-weight: 300;
 }
-#government-header-text {
+#page-header-text {
     font-size: 50px;
     margin-top: 12.5px;
 	margin-left: 5%;
@@ -62,7 +63,7 @@ body {
     padding-bottom: 15px;
     transition: .5s;
 }
-.government-header,
+.page-header,
 .nav-bar-ul-scrolled {
     position: fixed;
     /*very important nav bar wpnt stick without*/
@@ -118,9 +119,9 @@ body {
 /*end sticky nav*/
 
 /*nav bar responsive desigm*/
-@media screen and (max-width: 720px) {
+@media screen and (max-width: 950px) {
 	 /*header*/
-	#government-header-text{
+	#page-header-text{
 		font-size: 35px;
 		margin-top: 32.5px;
 		line-height: 1.1;
@@ -182,7 +183,7 @@ body {
 }
 
 @media screen and (max-width: 414px){
-	#government-header-text {
+	#page-header-text {
 		font-size: 35px;
 		margin-top: 15px;
 		line-height: 1.1;
@@ -232,7 +233,7 @@ body {
 
 /*contact*/
 #contact-div{
-	background-color: #F44336;
+	background-color: #FFA000;
 	overflow: hidden;
 	position: relative;
 	z-index: 9999;

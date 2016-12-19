@@ -17,8 +17,8 @@
 </head>
 <body>
 
-<div class = "government-header">
-  <h1 id = "government-header-text">Government</h1>
+<div class = "page-header">
+  <h1 id = "page-header-text">Government</h1>
 </div>
 
  <ul class = "nav-bar-ul" id = "sticky-nav-bar">        
@@ -58,7 +58,7 @@ In a coup in 2006, Commodore Frank Bainimarama seized power. When the High Court
 
 <!--contact us-->
 <div id = "contact-div">
-   <div id = "contact-email-div"><a href = "mailto:info@alarmrobotics.com"><img src = "images/social-media/web-ready/email-icon-white-rounded.png" id = "email-icon"></a>
+   <div id = "contact-email-div"><a href = "mailto:info@fiji.gov"><img src = "images/social-media/web-ready/email-icon-white-rounded.png" id = "email-icon"></a>
    <h2 id = "contact-email-text">Contact Us: <a href= "mailto:info@fiji.gov" id = "email-link-text">info@fiji.gov</a></h2>
    </div>
    
@@ -79,7 +79,7 @@ In a coup in 2006, Commodore Frank Bainimarama seized power. When the High Court
 
 <script>
   var nav = $(".nav-bar-ul");
-  headerHeight = $('.government-header').height();
+  headerHeight = $('.page-header').height();
   $(window).scroll(function(){
     if ( $(this).scrollTop()  > headerHeight){
       nav.addClass("nav-bar-ul-scrolled");
