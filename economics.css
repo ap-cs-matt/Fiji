@@ -48,7 +48,7 @@ body {
     list-style-type: none;
     height: 65px;
     margin-bottom: -65px;
-    background-color: #FFA000;
+    background-color: #8BC34A;
     /*box shadow*/
     
     z-index: 9999;
@@ -73,7 +73,7 @@ body {
     width: 100%;
 }
 .active-page{
-    background-color: #FF6F00;
+    background-color: #689F38;
     color: white;
 }
 
@@ -82,7 +82,7 @@ body {
 	text-decoration: none;
 }
 .link:hover {
-    background-color: #FF6F00;
+    background-color: #689F38;
 }
 #hamburger-menu {
     display: none;
@@ -234,7 +234,7 @@ body {
 
 /*contact*/
 #contact-div{
-	background-color: #FFA000;
+	background-color: #8BC34A;
 	overflow: hidden;
 	position: relative;
 	z-index: 9999;
