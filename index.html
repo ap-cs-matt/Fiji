@@ -1,13 +1,91 @@
-<!DOCTYPE html>
 
+<!DOCTYPE html>
 <html>
 <head>
-    <title>Page Title</title>
+  <title>Fiji</title>
+<link rel="shortcut icon" href="favicon.ico" />
+<meta name=viewport content="width=device-width, initial-scale=1">
+ <link href="https://fonts.googleapis.com/css?family=Lato:300,700" rel="stylesheet">
+ <link href="https://fonts.googleapis.com/css?family=Suez+One" rel="stylesheet">
+  <link href = 'index.css' rel='stylesheet' type='text/css'>
+  
+  <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.1.0/jquery.min.js"></script>
+  <script src="plugins/typed.js"></script>
+  
+
 </head>
 
 <body>
+  <div id = 'home'>
+    <div id = "home_fiji_wrapper"><h1 id="home_fiji">&nbsp;</h1></div>
+    
+    <div id="home_government_square" class="home_squares">
+    <p id = "home_squares_text">Government</p> <a href="government.html"></a>
+    
+    </div><div id="home_economics_square" class="home_squares">
+      <p id = "home_squares_text">Economics</p><a href="economics.html"></a>
+    
+    </div><div id="home_tourism_square" class="home_squares">
+      <p id = "home_squares_text">Tourism</p><a href="tourism.html"></a>
+      
+    </div><div id="home_food_square" class="home_squares">
+      <p id = "home_squares_text">Food</p><a href="food.html"></a>
+      
+      </div><div id="home_sports_square" class="home_squares">
+      <p id = "home_squares_text">Sports</p><a href="sports.html"></a>
+      
+      </div><div id="home_facts_square" class="home_squares">
+      <p id = "home_squares_text">Fun Facts</p><a href="facts.html"></a>
+      
+    </div>
+  </div>
 
-
+  
+</div>
+</div>
 
 </body>
 </html>
+ 
+<script>
+    $(function(){
+        $("#home_fiji").typed({
+            strings: ["^1000Welcome to Fiji^1500"/*, "^800Fih"*/],
+            typeSpeed: 2,  showCursor: false
+        });
+        
+    });
+    
+    
+    $("#home_government_square").click(function() {
+  window.location = $(this).find("a").attr("href"); 
+  return false;
+});
+     $("#home_economics_square").click(function() {
+  window.location = $(this).find("a").attr("href"); 
+  return false;
+});
+      $("#home_tourism_square").click(function() {
+  window.location = $(this).find("a").attr("href"); 
+  return false;
+});
+      
+      
+         $("#home_food_square").click(function() {
+  window.location = $(this).find("a").attr("href"); 
+  return false;
+});
+     $("#home_sports_square").click(function() {
+  window.location = $(this).find("a").attr("href"); 
+  return false;
+});
+      $("#home_facts_square").click(function() {
+  window.location = $(this).find("a").attr("href"); 
+  return false;
+});
+
+</script>
+
+
+
+
