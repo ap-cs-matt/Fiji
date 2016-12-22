@@ -1,19 +1,51 @@
+
+
+
+
+
+
+<!DOCTYPE html>
 <html>
 <head>
-	<title>Fiji Sports</title>
-</head>
+  <title>Sports</title>
 
-<header>
-	<center>
-	<img src="\\fs-studentdata-01v\studentprofiles$\5801790\Desktop\New folder\Fiji\O Capture_800x533.jpg" width=360 height=220>
-	<img src="\\fs-studentdata-01v\studentprofiles$\5801790\Desktop\New folder\Fiji\QOxxYdkB_20160918141015.jpg" width=360 height=220>
-	<img src="\\fs-studentdata-01v\studentprofiles$\5801790\Desktop\New folder\Fiji\fiji_sea_turtle.jpg" width=360 height=220>
-	<img src="\\fs-studentdata-01v\studentprofiles$\5801790\Desktop\New folder\Fiji\6a01116843c610970c01b7c7852297970b-800wi.jpg" width=360 height=220>
-	<img src="\\fs-studentdata-01v\studentprofiles$\5801790\Desktop\New folder\Fiji\InterContinental-Fiji-Golf-Resort-Spa-beach-view-shot-800x533.jpg" width=360 height=220>
-	</center>
-</header>
-<body bgcolor="90CAF9">
-	<center><font face="Arial" color="1A237E"><h1>FIJI SPORTS<h1></font></center>
+
+  <!--fonts-->
+   <link href="https://fonts.googleapis.com/css?family=Raleway:100,200,300,400,500,700" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css?family=Fira+Sans:300,400,500" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css?family=ABeeZee" rel="stylesheet">
+    <!---->
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.1.0/jquery.min.js"></script>
+    <script src="https://ajax.googleapis.com/ajax/libs/angularjs/1.5.7/angular.min.js"></script>
+  <link rel = "stylesheet" type="text/css" href="sports.css"> 
+ 
+</head>
+<body>
+
+<div class = "page-header">
+  <h1 id = "page-header-text">Sports</h1>
+</div>
+
+ <ul class = "nav-bar-ul" id = "sticky-nav-bar">        
+        <li id = "hamburger-menu-title">Tourism</li>
+        <li id = "hamburger-menu"><a id = "hamburger-menu-link" href="javascript:void(0);" onclick="responsiveNavBar();">&#9776;</a></li>
+        <li id = "nav-bar-filler"></li><!--only needed on home page - makes so green doesnt cover up hamburger icon-->
+        <a href = "index.html"><li id = "nav-bar-home" class = "nav-bar-item link">Home</li></a>
+        <a href = "government.html"><li id = "nav-bar-awards" id = "nav-bar-government" class = "nav-bar-item link" >Government</li></a>
+       <a href = "economics.html"><li id = "nav-bar-economics" class = "nav-bar-item link" >Economy</li></a>
+        <a href = "tourism.html"><li id = "nav-bar-tourism" class = "nav-bar-item link">Tourism</li></a>
+        <a href = "food.html"><li id = "nav-bar-food" class = "nav-bar-item link">Food</li></a>
+        <li  class = "nav-bar-item active-page">Sports</li>
+        <a href = "facts.html"><li id = "nav-bar-facts" class = "nav-bar-item link">Fun Facts</li></a>
+        
+
+    </ul>
+ 
+
+<div id="intro-div">
+  <div id = "intro-text-div">
+    
+<center><font face="Arial" color="1A237E"><h1>FIJI SPORTS<h1></font></center>
 	<br>
 	<h2><font color="1A237E" face="Arial"<b>Rugby</b></font></h2>
 	<p><h4>Rugby is Fijis most popular and prestigious sport. Along with Rugby World Cup victories, They now have something of more value to add to their Rugby trophy case. 
@@ -23,7 +55,7 @@
 	This long awaited metal was welcomed in Fiji with open arms.</h4>
 	<br>
 	<br>
-	<img src="\\fs-studentdata-01v\studentprofiles$\5801790\Desktop\New folder\Fiji\Fiji sevens -0-708-0-472.jpg">
+	<img src="Fiji sevens -0-708-0-472.jpg">
 	<br>
 	<hr>
 	<h2><font color="1A237E" face="Arial"<b>Boat Racing</b></font></h2>
@@ -36,5 +68,52 @@
 	<br>
 	<img src="\\fs-studentdata-01v\studentprofiles$\5801790\Desktop\New folder\Fiji\Camakau-Advantages-540x550.jpg">
 	<br>
+  </div>
+  
+</div>
+
+
+
+<!--contact us-->
+<div id = "contact-div">
+   <div id = "contact-email-div"><a href = "mailto:info@fiji.gov"><img src = "images/social-media/web-ready/email-icon-white-rounded.png" id = "email-icon"></a>
+   <h2 id = "contact-email-text">Contact Us: <a href= "mailto:info@fiji.gov" id = "email-link-text">info@fiji.gov</a></h2>
+   </div>
+   
+   <div id = "contact-social-media-div">
+   <ul id = "social-media-list">
+   <li class = "social-media-icon-li"><a href = "https://www.instagram.com/tourismfiji/"><img src = "images/social-media/web-ready/instagram-icon-white.png" id = "instagram-icon" class = "social-media-icon"></a></li>
+    <li class = "social-media-icon-li"><a href = "https://www.facebook.com/Fiji/"><img src = "images/social-media/web-ready/facebook-icon-white.png" id = "facebook-icon" class = "social-media-icon"></a> </li>
+    <li class = "social-media-icon-li"><a href = "https://twitter.com/tourismfiji?lang=en"><img src = "images/social-media/web-ready/twitter-icon-white.png" id = "twitter-icon" class = "social-media-icon"></a> <li>
+   </ul>
+   </div>
+  </div>
+
+
+
+
 </body>
 </html>
+
+<script>
+  var nav = $(".nav-bar-ul");
+  headerHeight = $('.page-header').height();
+  $(window).scroll(function(){
+    if ( $(this).scrollTop()  > headerHeight){
+      nav.addClass("nav-bar-ul-scrolled");
+    }
+    else{
+      nav.removeClass("nav-bar-ul-scrolled");
+    }
+  });
+  
+  function responsiveNavBar(){
+    var navBar = document.getElementById("sticky-nav-bar");
+    if(navBar.className == "nav-bar-ul" || navBar.className == "nav-bar-ul nav-bar-ul-scrolled" ){
+      $("#sticky-nav-bar").addClass("responsive");
+    }
+    else{
+       $("#sticky-nav-bar").removeClass("responsive");
+    }
+  }
+</script>
